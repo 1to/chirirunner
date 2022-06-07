@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Chiriboga</title>
+		<title>Jackrunner</title>
 		<link href="images/favicon.ico" rel="icon">
 		<link rel="manifest" href="manifest.json">
 		<?php
@@ -14,7 +14,7 @@
 		?>
 		<style>
 			body {
-				font-family: "Lucida Console", Monaco, monospace;
+				font-family: "Arial", Monaco, monospace;
 				color: white;
 				background:#354149;
 				background-image: url('images/bg.jpg');
@@ -22,7 +22,7 @@
 				padding-top:100px;
 				text-align:center;
 			}
-			
+
 			.header {
 				background-color: rgb(62,71,80);
 				border-bottom: 2px solid black;
@@ -35,15 +35,15 @@
 				right:0;
 				top:0;
 			}
-			
+
 			.header a:visited {
 				color:white;
 			}
-			
+
 			.header a {
 				color:white;
 			}
-			
+
 			.footer {
 				background-color: rgb(62,71,80);
 				outline: 1px solid white;
@@ -55,7 +55,7 @@
 				bottom:0;
 				padding:10px;
 			}
-			
+
 			a {
 				text-decoration: none;
 				color:lightsteelblue;
@@ -67,57 +67,57 @@
 				font-size: 32px;
 				margin:10px;
 			}
-			
+
 			.row {
 				margin:auto;
 				margin-bottom: 60px;
 				width:930px;
 			}
-			
+
 			a.runner, a.corp {
 				text-decoration: none;
 				text-align: center;
 				width: 300px;
 				display:inline-block;
 			}
-			
+
 			a span {
 				display:inline-block;
 				font-size: 22px;
 				margin: 10px;
 			}
-			
+
 			.corp {
 				color:rgb(100,100,250);
 			}
-			
+
 			.runner {
 				color:rgb(250,100,100);
 			}
-			
+
 			a:hover {
 				color:white;
 				text-decoration:underline;
 			}
-			
+
 			a:hover > img {
 				border-color: white;
 			}
-			
+
 			img.corp {
 				width:200px;
 				border: 2px solid rgb(100,100,250);
 				border-radius: 128px;
 				background-color: rgb(50,63,72);
 			}
-			
+
 			img.runner {
 				width:200px;
 				border: 2px solid rgb(250,100,100);
 				border-radius: 128px;
 				background-color: rgb(50,63,72);
 			}
-			
+
 			.tutorial {
 				width:40px;
 				height:40px;
@@ -128,7 +128,7 @@
 				color:white;
 				font-family: 'PlayBoldNisei';
 			}
-			
+
 			.tutorial:hover {
 				border: 2px solid white;
 				color:white;
@@ -136,15 +136,15 @@
 				text-decoration: none;
 				cursor:pointer;
 			}
-			
+
 			h3 {
 				margin-bottom:10px;
 			}
-			
+
 			.ltp-link {
 				margin-top:10px;
 			}
-			
+
 			.noselect {
 			  -webkit-touch-callout: none; /* iOS Safari */
 				-webkit-user-select: none; /* Safari */
@@ -160,15 +160,15 @@
 	if ($dev) echo '<body onload="document.getElementById(\'dev-info\').innerHTML = \'Development version (cards up to \' + cardSet[cardSet.length-1].title + \')&emsp;&emsp;|&emsp;&emsp;\';">';
 	else echo '<body>';
 	?>
-		<div class="header"><a href="engine.php?faceoff=true"><img class="header-contents" src="images/chiriboga_icon.png"><span class="header-contents">Chiriboga<span></a></div>
+		<div class="header"><a href="engine.php?faceoff=true"><img class="header-contents" src="images/Jackrunner_icon.png"><span class="header-contents">Jackrunner<span></a></div>
 		<div class="row">
 			<h3>Learn to play</h3>
-			<a href="engine.php?p=r&mentor=0" class="tutorial noselect" title="Clicks and Runs">1</a>
-			<a href="engine.php?p=r&mentor=1" class="tutorial noselect" title="Credits and Runner Card Types">2</a>
-			<a href="engine.php?p=r&mentor=2" class="tutorial noselect" title="Ice and Icebreakers">3</a>
-			<a href="engine.php?p=r&mentor=3" class="tutorial noselect" title="Assets, Trash Costs, and Run Events">4</a>
-			<a href="engine.php?p=r&mentor=4" class="tutorial noselect" title="Advancing, Scoring, and Damage">5</a>
-			<a href="engine.php?p=c&mentor=5" class="tutorial noselect" title="Upgrades, Root, and Trash on Install">6</a><br/>
+			<a href="engine.php?p=r&mentor=0" class="tutorial noselect" title="Clicks and Runs">Clicks and Runs</a>
+			<a href="engine.php?p=r&mentor=1" class="tutorial noselect" title="Credits and Runner Card Types">Credits and Runner cards</a>
+			<a href="engine.php?p=r&mentor=2" class="tutorial noselect" title="Ice and Icebreakers">Ice and Icebreakers</a>
+			<a href="engine.php?p=r&mentor=3" class="tutorial noselect" title="Assets, Trash Costs, and Run Events">Assets, Trash and Events</a>
+			<a href="engine.php?p=r&mentor=4" class="tutorial noselect" title="Advancing, Scoring, and Damage">Advancing, Scoring, Damage</a>
+			<a href="engine.php?p=c&mentor=5" class="tutorial noselect" title="Upgrades, Root, and Trash on Install">Upgrades, Root, Trash on Install</a><br/>
 			<div class="ltp-link">or read <a href="https://nisei.net/players/learn-to-play/">NISEI's Learn to Play guide</a></div>
 		</div>
 		<div class="row">
@@ -182,7 +182,7 @@
 			<a class="corp" href="decklauncher.php?p=c&c=random"><img class="corp" src="images/menu_corp_3.png"><span>Corp Deckbuilding</span></a>
 		</div>
 		<div class="footer">
-			<span id="dev-info"></span><span>Source code <a href="https://github.com/bobtheuberfish/chiriboga">available on GitHub</a></span>
+			<span id="dev-info"></span><span>Source code <a href="https://github.com/bobtheuberfish/Jackrunner">available on GitHub</a></span>
 		</div>
 	</body>
 </html>
