@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Jackrunner</title>
+		<title>Chiriboga</title>
 		<link href="images/favicon.ico" rel="icon">
 		<link rel="manifest" href="manifest.json">
 		<?php
@@ -160,15 +160,15 @@
 	if ($dev) echo '<body onload="document.getElementById(\'dev-info\').innerHTML = \'Development version (cards up to \' + cardSet[cardSet.length-1].title + \')&emsp;&emsp;|&emsp;&emsp;\';">';
 	else echo '<body>';
 	?>
-		<div class="header"><a href="engine.php?faceoff=true"><img class="header-contents" src="images/Jackrunner_icon.png"><span class="header-contents">Jackrunner<span></a></div>
+		<div class="header"><a href="engine.php?faceoff=true"><img class="header-contents" src="images/chiriboga_icon.png"><span class="header-contents">Chiriboga<span></a></div>
 		<div class="row">
 			<h3>Learn to play</h3>
-			<a href="engine.php?p=r&mentor=0" class="tutorial noselect" title="Clicks and Runs">Clicks and Runs</a>
-			<a href="engine.php?p=r&mentor=1" class="tutorial noselect" title="Credits and Runner Card Types">Credits and Runner cards</a>
-			<a href="engine.php?p=r&mentor=2" class="tutorial noselect" title="Ice and Icebreakers">Ice and Icebreakers</a>
-			<a href="engine.php?p=r&mentor=3" class="tutorial noselect" title="Assets, Trash Costs, and Run Events">Assets, Trash and Events</a>
-			<a href="engine.php?p=r&mentor=4" class="tutorial noselect" title="Advancing, Scoring, and Damage">Advancing, Scoring, Damage</a>
-			<a href="engine.php?p=c&mentor=5" class="tutorial noselect" title="Upgrades, Root, and Trash on Install">Upgrades, Root, Trash on Install</a><br/>
+			<a href="engine.php?p=r&mentor=0" class="tutorial noselect" title="Clicks and Runs">1</a>
+			<a href="engine.php?p=r&mentor=1" class="tutorial noselect" title="Credits and Runner Card Types">2</a>
+			<a href="engine.php?p=r&mentor=2" class="tutorial noselect" title="Ice and Icebreakers">3</a>
+			<a href="engine.php?p=r&mentor=3" class="tutorial noselect" title="Assets, Trash Costs, and Run Events">4</a>
+			<a href="engine.php?p=r&mentor=4" class="tutorial noselect" title="Advancing, Scoring, and Damage">5</a>
+			<a href="engine.php?p=c&mentor=5" class="tutorial noselect" title="Upgrades, Root, and Trash on Install">6</a><br/>
 			<div class="ltp-link">or read <a href="https://nisei.net/players/learn-to-play/">NISEI's Learn to Play guide</a></div>
 		</div>
 		<div class="row">
@@ -182,7 +182,7 @@
 			<a class="corp" href="decklauncher.php?p=c&c=random"><img class="corp" src="images/menu_corp_3.png"><span>Corp Deckbuilding</span></a>
 		</div>
 		<div class="footer">
-			<span id="dev-info"></span><span>Source code <a href="https://github.com/bobtheuberfish/Jackrunner">available on GitHub</a></span>
+			<span id="dev-info"></span><span>Source code <a href="https://github.com/bobtheuberfish/chiriboga">available on GitHub</a></span>
 		</div>
 	</body>
 </html>

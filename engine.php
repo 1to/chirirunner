@@ -57,10 +57,10 @@
 			</form>
 		</div>
 		<div id="menubar"><button onclick="$('#menu').css('display','flex'); if (document.fullscreen) document.exitFullscreen(); $('.fullscreen-button').show();"><img src="images/chiriboga_withtext.png"></button></div>
-		<div id="header"></div>
-		<button class="fullscreen-button" onclick="document.getElementById('body').requestFullscreen({ navigationUI: 'hide' }); $('.fullscreen-button').hide();"></button>
 		<div id="fps"></div>
 		<div id="footer"></div>
+		<div id="header"></div>
+		<button class="fullscreen-button" onclick="document.getElementById('body').requestFullscreen({ navigationUI: 'hide' }); $('.fullscreen-button').hide();"></button>
 		<div id="modal" class="modal">
 			<div id="modalcontent" class="modal-content"></div>
 		</div>

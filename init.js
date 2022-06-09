@@ -927,12 +927,17 @@ function Render() {
     viewingGrid = null;
   }
 
+	
+	
+	
+	
+	
   //Field rendered, now overlay any GUI
   var guiWOffset = 0;
   var guiWSpacingModifier = 0;
   if (viewingPlayer == corp) {
-    guiWOffset = 45;
-    guiWSpacingModifier = 7;
+    guiWOffset = 0;
+    guiWSpacingModifier = 0;
   }
   
   var hideCredits = runner.identityCard.hideCredits;
@@ -943,12 +948,12 @@ function Render() {
   var hideHandSize = runner.identityCard.hideHandSize;
   var hideBadPublicity = runner.identityCard.hideBadPublicity;
   
-  var corpFooterHeight = 65;
+  var corpFooterHeight = 50;
   var originalGuiWOffset = guiWOffset;
   var counterPositionings = [];
   //e is element, rw is width when viewing as runner, cw is that but as corp, h is height, s is whether to show it
-  counterPositionings.push({ e: countersUI.credits.corp, rw: 40, cw: 40, h: 40, s: !hideCredits });
-  counterPositionings.push({ e: countersUI.click.corp, rw: 74, cw: 74, h: 40, s: !hideClicks });
+  counterPositionings.push({ e: countersUI.click.corp, rw: 75, cw: 75, h: 40, s: !hideClicks });
+  counterPositionings.push({ e: countersUI.credits.corp, rw: 75, cw: 75, h: 40, s: !hideCredits });
   counterPositionings.push({ e: countersUI.hand_size.corp, rw: 90, cw: 90, h: 40, s: !hideHandSize });
   //counterPositionings.push({ e: countersUI.bad_publicity.corp, rw: 93, cw: 85, h: 38, s: !hideBadPublicity });
   var counterUIWOffset = 0;
@@ -968,16 +973,16 @@ function Render() {
   countersUI.hand_size.corp.richText.text =
     countersUI.hand_size.corp.prefix + corp._renderOnlyHandSize;
   
-  var runnerFooterHeight = 65;
+  var runnerFooterHeight = 50;
   guiWOffset = originalGuiWOffset;
   counterPositionings = [];
   //e is element, rw is width when viewing as runner, cw is that but as corp, h is height, s is whether to show it
-  counterPositionings.push({ e: countersUI.credits.runner, rw: 40, cw: 40, h: 40, s: !hideCredits });
-  counterPositionings.push({ e: countersUI.click.runner, rw: 70, cw: 70, h: 40, s: !hideClicks });
-  counterPositionings.push({ e: countersUI.tag.runner, rw: 85, cw: 85, h: 39, s: (!hideTags && globalProperties.agendaPointsToWin == 7) }); //hide for tutorial deck
-  counterPositionings.push({ e: countersUI.mu.runner, rw: 82, cw: 100, h: 38, s: !hideMU });
+  counterPositionings.push({ e: countersUI.click.runner, rw: 75, cw: 75, h: 40, s: !hideClicks });
+  counterPositionings.push({ e: countersUI.credits.runner, rw: 75, cw: 75, h: 40, s: !hideCredits });
+  counterPositionings.push({ e: countersUI.tag.runner, rw: 75, cw: 75, h: 40, s: (!hideTags && globalProperties.agendaPointsToWin == 7) }); //hide for tutorial deck
+  counterPositionings.push({ e: countersUI.mu.runner, rw: 75, cw: 75, h: 40, s: !hideMU });
   //counterPositionings.push({ e: countersUI.brain_damage.runner, rw: 207, cw: 207, h: 38, s: !hideBrainDamage });
-  counterPositionings.push({ e: countersUI.hand_size.runner, rw: 93, cw: 85, h: 38, s: !hideHandSize });
+  counterPositionings.push({ e: countersUI.hand_size.runner, rw: 80, cw: 80, h: 40, s: !hideHandSize });
   counterUIWOffset = 0;
   for (var i=0; i<counterPositionings.length; i++) {
 	  if (!counterPositionings[i].s) {
